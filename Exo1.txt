@@ -1,0 +1,41 @@
+ Introduction à l'authentification
+
+1- Qu'est-ce que l'authentification ?
+L'authentification est le processus permettant de vérifier l'identité d'un utilisateur ou d'un système. 
+Elle consiste à confirmer que l'utilisateur est bien celui qu'il prétend être, 
+généralement en utilisant un identifiant (nom d'utilisateur, email) et un mot de passe 
+ou une autre méthode (comme les empreintes digitales ou la reconnaissance faciale).
+
+2- Différence entre authentification et autorisation
+
+- Authentification : C'est l'étape où l'utilisateur prouve son identité. 
+Il s'agit de vérifier les informations d'identification.
+- Autorisation : Une fois authentifié, l'utilisateur est autorisé ou non à accéder 
+à certaines ressources ou fonctionnalités. L'autorisation détermine ce qu'un utilisateur peut faire.
+
+3- Qu'est-ce qu'un JWT (JSON Web Token) ? 
+Un JWT est un jeton (token) compact, sécurisé et utilisé pour l'authentification.
+ Il est encodé en JSON et contient des informations que le serveur peut vérifier 
+ pour autoriser des actions ou des accès. Il est souvent utilisé pour la gestion 
+ des sessions et des authentifications dans des applications web.
+
+4- Pourquoi utiliser des tokens pour l'authentification ?
+ Les tokens sont utilisés car ils permettent de maintenir une session d'authentification
+  sans nécessiter de stockage sur le serveur, contrairement aux sessions traditionnelles.
+   Les tokens (comme les JWT) sont envoyés avec chaque requête, permettant au serveur 
+   de vérifier l'identité de l'utilisateur sans devoir stocker des informations de session en mémoire.
+
+5- Différence entre les sessions traditionnelles et les tokens JWT ?
+
+- Sessions traditionnelles :
+ Le serveur stocke des informations de session et attribue un identifiant de session
+  à chaque utilisateur connecté. Les informations sont conservées côté serveur.
+
+- Tokens JWT : Le jeton JWT contient toutes les informations nécessaires (claims) et est stocké côté client. Le serveur n'a pas besoin de stocker d'informations sur l'utilisateur, il vérifie simplement le token reçu.
+
+- Avantages de l'authentification dans une application web?
+Sécurisation des accès
+Identification des utilisateurs
+Personnalisation des expériences utilisateur
+Protection des ressources sensibles
+Suivi des utilisateurs et gestion des sessions
